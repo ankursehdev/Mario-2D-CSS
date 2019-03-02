@@ -1,0 +1,447 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** =======
+Ankur Sehdev 
+========= **/
+
+.d_none {
+  display: none;
+}
+
+
+.abs {
+  position: absolute;
+}
+
+.rel {
+  position: relative;
+}
+
+.mario {
+  position: relative;
+  width: 220px;
+  height: 300px;
+}
+
+.mario > div {
+  position: absolute;
+}
+
+.mario_base {
+  height: 300px;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+
+.cap {
+  position: relative;
+  top: 22px;
+  left: 63px;
+}
+
+.cap_top, .cap_bottom{
+  height: 15px;
+  width: 75px;
+  background: #fd2e00;
+  display: block;
+  position: relative;
+}
+
+.cap_bottom {
+  left: -16px;
+  width: 135px;
+}
+
+.head {
+  top: 52px;
+  left: 62px;
+}
+
+.head > span {
+  position: absolute;
+  display: block;
+
+}
+.head_base {
+  width: 90px;
+  height: 75px;
+  background: #e9a249;
+
+  z-index: 0;
+}
+
+.head_base::before {
+  content: " ";
+  background: #e9a249;
+  width: 15px;
+  height: 15px;
+  left: 120px;
+  top: 30px;
+  position: absolute;
+}
+
+.head_base::after {
+  content: " ";
+  background: #e9a249;
+  width: 30px;
+  height: 30px;
+  left: 90px;
+  top: 15px;
+  position: absolute;
+}
+
+.hair {
+  background: #61220f;
+  display: block;
+  position: absolute;
+}
+
+.front {
+  width: 31px;
+  height: 45px;
+}
+
+.back {
+  height: 60px;
+  width: 15px;
+  top: 0;
+  left: -15px;
+}
+
+.back2 {
+  height: 45px;
+  width: 15px;
+  top: 15px;
+  left: -29px;
+}
+
+.ear {
+  height: 31px;
+  width: 15px;
+  background: #e9a249;
+  top: 14px;
+  left: -15px;
+  z-index: 999;
+}
+
+.ear_front {
+  width: 15px;
+  height: 15px;
+  background: #e9a249;
+  left: 16px;
+  top: 15px;
+}
+
+.eye {
+  width: 15px;
+  height: 30px;
+  background: #000000;
+  left: 60px;
+  top: 0px;
+}
+
+.mustache {
+  background: #61220f;
+  width: 60px;
+  height: 15px;
+  left: 60px;
+  top: 45px;
+}
+
+.mustache::before {
+  content: " ";
+  background: #61220f;
+  width: 15px;
+  height: 15px;
+  left: 15px;
+  top: -15px;
+  position: absolute;
+}
+
+.mustache::after {
+  content: " ";
+  background: #e9a249;
+  width: 15px;
+  height: 15px;
+  left: 30px;
+  top: 15px;
+  position: absolute;
+}
+
+.mario_body {
+  top: 140px
+}
+
+.tshirt {
+  position: absolute;
+  left: 48px;
+  top:-13px;
+  width: 90px;
+  height: 60px;
+  background: #fd2e00;
+  z-index: 0;
+}
+
+.tshirt_front {
+  position: absolute;
+  left: 138px;
+  width: 45px;
+  height: 30px;
+  background: #fd2e00;
+  z-index: 0
+}
+
+.tshirt_front::after{
+  content: " ";
+  background: #fd2e00;
+  width: 15px;
+  height: 15px;
+  left: 44px;
+  top: 15px;
+  position: absolute;
+}
+
+.tshirt_front::before{
+  content: " ";
+  background: #fd2e00;
+  width: 15px;
+  height: 15px;
+  left: 14px;
+  top: 30px;
+  position: absolute;
+}
+
+.tshirt_back {
+  position: absolute;
+  left: 33px;
+  width: 15px;
+  height: 30px;
+  background: #fd2e00;
+  z-index: 0;
+}
+
+.tshirt_back::before {
+  content: " ";
+  background: #fd2e00;
+  width: 15px;
+  height: 15px;
+  left: -15px;
+  top: 15px;
+  position: absolute;
+}
+
+.hand {
+  top: 170px;
+}
+
+.hand > .left{
+  width: 30px;
+  height: 45px;
+  background: #e9a249;
+  left: 18px;
+  position: absolute;
+}
+
+.hand > .left::after {
+  content: " ";
+  background: #e9a249;
+  width: 15px;
+  height: 15px;
+  left: 30px;
+  top: 15px;
+  position: absolute;
+}
+
+.hand > .right{
+  width: 30px;
+  height: 45px;
+  background: #e9a249;
+  left: 167px;
+  position: absolute;
+}
+
+.hand > .right::after {
+  content: " ";
+  background: #e9a249;
+  width: 15px;
+  height: 15px;
+  left: -15px;
+  top: 15px;
+  position: absolute;
+}
+.jeans{
+  z-index: 1;
+  top: 156px;
+}
+.jeans > .top {
+  width: 60px;
+  height: 60px;
+  background: #0f447e;
+  z-index: 1;
+  position: absolute;
+  left: 78px;
+}
+
+.jeans > .top::after {
+  content: " ";
+  background: #0f447e;
+  width: 15px;
+  height: 25px;
+  left: 45px;
+  top: -15px;
+  position: absolute;
+}
+
+.jeans > .top::before {
+  content: " ";
+  background: #0f447e;
+  width: 15px;
+  height: 30px;
+  left: 0;
+  top: -29px;
+  position: absolute;
+}
+
+.jeans > span {
+  width: 45px;
+  height: 30px;
+  background: #0f447e;
+  position: absolute;
+  
+}
+.btm_left{
+  left: 48px;
+  top: 44px;
+}
+
+.btm_left::before{
+  left: 15px;
+  content: " ";
+  background: #0f447e;
+  width: 15px;
+  position: absolute;
+  height: 30px;
+  top: -30px;
+}
+
+.btm_right{
+  left: 122px;
+  top: 44px;
+}
+.btm_right::before{
+  left: 15px;
+  content: " ";
+  background: #0f447e;
+  width: 15px;
+  position: absolute;
+  height: 30px;
+  top: -30px;
+}
+
+.buttons {
+  z-index: 2;
+  top: 170px;
+}
+
+.buttons > span{
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background: #f7fd18;
+}
+
+.buttons > span.btn_right{
+  left: 122px;
+}
+
+.buttons > span.btn_left{
+  left: 78px;
+}
+.foot {
+  top: 30px;
+}
+.foot >span {
+  position: absolute;
+  width: 44px;
+  height: 30px;
+  top: 200px;
+  background: #61220f;
+}
+
+.foot > span.ft_left{
+  left: 34px;
+}
+
+span.ft_left::after{
+  left: -15px;
+  content: " ";
+  background: #61220f;
+  width: 15px;
+  position: absolute;
+  height: 16px;
+  top: 14px;
+}
+
+.foot > span.ft_right{
+  left: 137px;
+}
+
+.foot > span.ft_right::after{
+  right: -15px;
+  content: " ";
+  background: #61220f;
+  width: 15px;
+  position: absolute;
+  height: 16px;
+  top: 14px;
+}
